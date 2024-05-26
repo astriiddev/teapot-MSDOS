@@ -6,7 +6,7 @@ Based on [Rebecca Cran's Utah Teapot for SDL1.2](https://github.com/bcran/teapot
 
 <img src='https://github.com/astriiddev/teapot-MSDOS/assets/98296288/d30b3117-ba72-41d0-95c9-54cabd76b101' width='600'>  <br />
 
-https://github.com/astriiddev/teapot-MSDOS/assets/98296288/90c086c4-44df-443f-b747-6a9eee2fe436
+https://github.com/astriiddev/teapot-MSDOS/assets/98296288/bef4b896-c138-409c-a600-b2c9eae0b86e
 
 Fun excerize in low-level 3D graphics :)
 
