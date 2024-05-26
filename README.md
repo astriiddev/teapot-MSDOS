@@ -11,7 +11,7 @@ https://github.com/astriiddev/teapot-MSDOS/assets/98296288/bef4b896-c138-409c-a6
 Fun excerize in low-level 3D graphics :)
 
 # Building
-This has been tested in DOSBox-X as well as on my own 66MHz 486. 
+This has been tested in DOSBox-X as well as on my own 66MHz 486 machine. 
 Builds tested with Borland Turbo C++, DJGPP 2.02, and Watcom C/C++ 9.5.
 
 To build, rename either the `GMF` (GNU Makefile), `TMF` (Turbo C Makefile), or `WMF` (Watcom Makefile) to `MAKEFILE` and run `make` (`wmake` for Watcom).  
