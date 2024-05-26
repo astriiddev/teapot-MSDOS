@@ -1,0 +1,20 @@
+NAME = tea
+CC = gcc
+
+CFLAGS = -O0 -g -c -Wall
+LDFLAGS = -lm
+
+OBJS = main.o video.o bezier.o matrix.o
+
+%.o: %.c
+	$(CC) $(CFLAGS) $<
+
+$(NAME): $(OBJS)
+	$(CC) $(LDFLAGS) -o $@.exe $^
+
+.SILENT: clean
+
+clean:
+	@del *.o
+	@del $(NAME).exe
+	@del *.bak

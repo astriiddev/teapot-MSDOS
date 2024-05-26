@@ -1,0 +1,23 @@
+# tlink will sometimes will have trouble linking during rebuild
+# just run a second time to get it to build
+
+NAME = tea
+CC = tcc
+
+CFLAGS = -I\TC\INCLUDE -I\MYDEV\CDEV\TEA -c -mc -w -G -O
+LDFLAGS = -L\TC\LIB -mc
+
+OBJS = main.obj video.obj bezier.obj matrix.obj
+
+.c.obj:
+   $(CC) $(CFLAGS) $*.c
+
+$(NAME).exe: $(OBJS)
+   $(CC) $(LDFLAGS) -e$&.exe $?
+
+.SILENT: clean
+
+clean:
+   @del *.obj
+   @del $(NAME).exe
+   @del *.bak

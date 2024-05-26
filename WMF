@@ -1,0 +1,18 @@
+NAME = tea
+CC = wcl
+
+CFLAGS = /i=\WATCOM\H /cc /c /3 /mc
+LDFLAGS = /l=dos /lr
+
+OBJS = main.obj video.obj bezier.obj matrix.obj
+
+.c.obj:
+	$(CC) $(CFLAGS) $*.c
+
+$(NAME).exe: $(OBJS)
+	$(CC) $(LDFLAGS) /fe=$@ $<
+
+clean:
+	@del *.obj
+	@del $(NAME).exe
+	@del *.bak
